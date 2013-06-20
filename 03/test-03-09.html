@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Mobile Test</title>
+	<script src="../js/jquery-1.9.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/jquery.mobile-1.3.1.min.css" />
+	<script src="../js/jquery.mobile-1.3.1.min.js"></script>
+	<style>
+		.ui-icon-myapp-tweet {
+			background-image:url(img/twitter.18.png);
+		}
+		@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+			.ui-icon-myapp-tweet {
+				background-image:url(img/twitter.36.png) !important;
+				background-size: 18px 18px;
+			}
+		}
+	</style>
+	<meta name="viewport" content="width=device-width, initial-slace=1" />
+</head>
+
+<body>
+<div data-role="page" id="page3-9" data-add-back-btn="true" data-back-btn-text="戻る">
+	<div data-role="header">
+		<h1>ボタン</h1>
+	</div>
+
+	<div data-role="content">
+		<p>【基本ボタン】</p>
+		<a href="#" data-role="button">aタグ</a>
+		<button data-theme="b">buttonタグ</button>
+		<input type="button" value="inputタグ">
+		<br>
+
+		<p>【インライン】</p>
+		<a href="#" data-role="button" data-inline="true">ボタン1</a>
+		<a href="#" data-role="button" data-inline="true">ボタン2</a>
+		<a href="#" data-role="button" data-inline="true">ボタン3</a>
+		<br>
+
+		<p>【グループ化されたボタン】</p>
+		<div data-role="controlgroup">
+			<a href="#" data-role="button" data-corners="false">ボタン1</a>
+			<a href="#" data-role="button" data-corners="false">ボタン2</a>
+			<a href="#" data-role="button" data-corners="false">ボタン3</a>
+		</div>
+		<div data-role="controlgroup" data-type="horizontal">
+			<a href="#" data-role="button">横</a>
+			<a href="#" data-role="button">向き</a>
+			<a href="#" data-role="button" data-shadow="false" data-corners="false">ボタン</a>
+		</div>
+		<br>
+
+		<p>【ボタンアイコン】</p>
+		<div data-role="controlgroup" data-type="horizontal">
+			<a href="#" data-role="button" data-icon="arrow-l" data-iconpos="right">左矢印</a>
+			<a href="#" data-role="button" data-icon="arrow-r" data-iconpos="left">右矢印</a>
+			<a href="#" data-role="button" data-icon="arrow-u" data-iconpos="top">上矢印</a>
+			<a href="#" data-role="button" data-icon="arrow-d" data-iconpos="bottom">下矢印</a>
+			<a href="#" data-role="button" data-icon="delete" data-iconpos="notext">削除</a>
+			<a href="#" data-role="button" data-icon="plus" data-iconpos="notext">プラス</a>
+			<a href="#" data-role="button" data-icon="minus" data-iconpos="notext">マイナス</a>
+			<a href="#" data-role="button" data-icon="check">チェック</a>
+			<a href="#" data-role="button" data-icon="gear">歯車</a>
+			<a href="#" data-role="button" data-icon="refresh">リロード</a>
+			<a href="#" data-role="button" data-icon="forward">進む</a>
+			<a href="#" data-role="button" data-icon="back">戻る</a>
+			<a href="#" data-role="button" data-icon="grid">グリッド</a>
+			<a href="#" data-role="button" data-icon="star">星</a>
+			<a href="#" data-role="button" data-icon="alert">警告</a>
+			<a href="#" data-role="button" data-icon="info">情報</a>
+			<a href="#" data-role="button" data-icon="home">ホーム</a>
+			<a href="#" data-role="button" data-icon="search">検索</a>
+			<a href="#" data-role="button" data-icon="myapp-tweet">カスタム</a>
+		</div>
+	</div>
+
+	<div data-role="footer">
+		<h4>yone3.net</h4>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Mobile Test</title>
+	<link rel="stylesheet" type="text/css" href="../css/jquery.mobile-1.3.1.min.css" />
+	<script src="../js/jquery-1.9.1.min.js"></script>
+	<script src="../js/jquery.mobile-1.3.1.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-slace=1" />
+</head>
+
+<body>
+<div data-role="page" id="page4-6" data-add-back-btn="true" data-back-btn-text="戻る">
+	<div data-role="header">
+		<h1>入れ子のリスト</h1>
+	</div>
+	<div data-role="content">
+		<ul data-role="listview">
+			<li><a href="#">今すぐ注文！</a></li>
+			<li>開催会場
+				<ul>
+					<li>ボストン</li>
+					<li>ニューヨーク</li>
+					<li>マイアミ</li>
+					<li>サンフランシスコ</li>
+					<li>サンノゼ</li>
+				</ul>
+			</li>
+			<li>トピック
+				<ul data-role="listview">
+					<li>モバイルWebへの招待
+						<ul data-role="listview">
+							<li>WMLと以前の規格</li>
+							<li>XHTML MP</li>
+							<li>HTML 4.01</li>
+							<li>HTML5</li>
+						</ul>
+					</li>
+					<li>モバイルブラウザ
+						<ul data-role="listview">
+							<li>iOS向けSafari</li>
+							<li>Androidブラウザ</li>
+							<li>Firefox for Mobile</li>
+							<li>Opera</li>
+						</ul>
+					</li>
+					<li>タブレットブラウザ</li>
+					<li>jQueryの利用</li>
+				</ul>
+			</li>
+			<li>キャンペーン
+				<ul data-role="listview">
+					<li>5月まで10%引き</li>
+					<li><a href="hoge.html">3x2</a></li>
+					<li>会員は10%引き</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div data-role="footer">
+		<h4>yone3.net</h4>
+	</div>
+</div>
+
+</body>
+</html>

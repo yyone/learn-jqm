@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.1.min.css" />
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">
+		/* clear cache page */
+//		$(document).on('pagehide', function(event, ui) {
+//		  var page = $(event.target);
+//		  page.remove();
+//		});
+		$(document).bind("mobileinit", function() {
+			$.mobile.defaultPageTransition = "slide";
+			$.mobile.page.prototype.options.addBackBtn = true; // default [back] button on
+			$.mobile.page.prototype.options.backBtnText = "戻る";
+//			$.mobile.minScrollBack = 150;
+//			$.mobile.ajaxEnabled = false; // off ajax
+//			$.mobile.hashListeningEnabled = false; 
+		});
+	</script>
+	<script src="js/jquery.mobile-1.3.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).bind("load", function() {
+//			$.mobile.fixedToolbars.hide(true);
+//			$.moible.loadPage.defaults.reloadPage = true;
+//			$.mobile.urlHistory = "";
+//			$.mobile.touchOverflowEnabled = true;
+		});
+	</script>
+	<meta name="viewport" content="width=device-width, initial-slace=1" />
+</head>
+
+<body>
+<div data-role="page" id="page">
+	<div data-role="header" data-position="fixed">
+		<h1>jQuery Mobile</h1>
+	</div>
+	<div data-role="content">
+		<section class="ui-grid-a">
+			<div class="ui-block-a" style="width:80px;margin-bottom:10px;">第２章</div>
+			<div class="ui-block-b" style="width:auto;"><a href="02/test-02-00.html" data-transition="slide">jQuery Mobileをはじめよう</a></div>
+
+			<div class="ui-block-a" style="width:80px;margin-bottom:10px;">第３章</div>
+			<div class="ui-block-b" style="width:auto;"><a href="03/test-03-00.html" data-transition="slide">UIコンポーネント</a></div>
+
+			<div class="ui-block-a" style="width:80px;margin-bottom:10px;">第４章</div>
+			<div class="ui-block-b" style="width:auto;"><a href="04/test-04-00.html" data-transition="slide">リスト</a></div>
+
+			<div class="ui-block-a" style="width:80px;margin-bottom:10px;">第５章</div>
+			<div class="ui-block-b" style="width:auto;"><a href="05/test-05-00.html" data-transition="slide">フォームコンポーネント</a></div>
+
+			<div class="ui-block-a" style="width:80px;margin-bottom:10px;">第６章</div>
+			<div class="ui-block-b" style="width:auto;"><a href="06/test-06-00.html" data-transition="slide">jQuery MobileとJavaScript</a></div>
+		</section>
+	</div>
+	<div data-role="footer">
+		<h4>yone3.net</h4>
+	</div>
+</div>
+
+</body>
+</html>
