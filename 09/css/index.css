@@ -1,0 +1,41 @@
+/* header */
+.ui-header {
+	background-color: #69C;
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+
+/* オフライン用インストール関連の表示 */
+#console, #consoleInstall {
+	background-color: #FF6;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	padding: 5px;
+	margin: 0;
+	text-align: center;
+	border: 1px solid #CCC;
+	font-size: small;
+}
+
+/* ホームページのコンテンツ */
+#home [data-role=content] {
+	background-color: white;
+	text-align: center;
+}
+
+.openWithoutInstall {
+	margin-top: 50px;
+	display: block;
+}
+
+/* ナビゲーションバーの文字列 */
+[data-role=navbar] .ui-btn-text {
+	font-size: smaller;
+}
+
+#logo {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	width: 290px;
+}
