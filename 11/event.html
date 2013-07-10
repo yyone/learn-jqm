@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Mobile Test</title>
+	<link rel="stylesheet" type="text/css" href="../css/jquery.mobile-1.3.1.min.css" />
+	<style>
+		.ui-block-b {
+			text-align:center;
+			position:relative;
+			top:12px;
+		}
+	</style>
+	<script src="../js/jquery-1.9.1.min.js"></script>
+	<script src="../js/jquery.mobile-1.3.1.min.js"></script>
+	<script>
+		$(document).on('popupbeforeposition', '#popup', function() {
+			var num1 = +$('#num1').val();
+			var num2 = +$('#num2').val();
+			$('#result').text(num1 + num2);
+		});
+	</script>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+</head>
+
+<body>
+<div data-role="page" id="page11-1" data-add-back-btn="true" data-back-btn-text="戻る">
+	<div data-role="header" data-position="fixed">
+		<h1>付録　ポップアップ</h1>
+	</div>
+
+	<div data-role="content">
+		<div class="ui-grid-b">
+			<div class="ui-block-a"><input id="num1" type="number" data-inline="true"></div>
+			<div class="ui-block-b"><div id="operator">＋</div></div>
+			<div class="ui-block-c"><input id="num2" type="number" data-inline="true"></div>
+		</div>
+		<a href="#popup" data-rel="popup" data-role="button">答え</a>
+	</div>
+
+	<div data-role="popup" id="popup" data-position-to="window" class="ui-content">
+		<p>答えは<span id="result"></span>です。</p>
+		<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+	</div>
+
+	<div data-role="footer">
+		<h4>yone3.net</h4>
+	</div>
+</div>
+
+</body>
+</html>
